@@ -1,12 +1,6 @@
-package com.example;
+package com.example.dto;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "notes")
-public class Note {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class NoteResponseDto {
     private Long id;
     private String title;
     private String content;
